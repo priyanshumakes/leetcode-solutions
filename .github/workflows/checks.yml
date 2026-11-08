@@ -15,7 +15,7 @@ jobs:
           set -e
           for f in $(find . -name '*.cpp'); do
             echo "checking $f"
-            g++ -std=c++17 -fsyntax-only "$f"
+            g++ -std=c++17 -fsyntax-only -include ci/leetcode-env.h "$f"
           done
       - name: Byte-compile all Python solutions
         run: |
