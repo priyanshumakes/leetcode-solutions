@@ -2,6 +2,24 @@
 
 I'm practicing DSA by solving LeetCode problems. I try to understand the brute-force approach first and then see if I can make it faster.
 
+[![Solution checks](https://github.com/priyanshumakes/leetcode-solutions/actions/workflows/checks.yml/badge.svg)](https://github.com/priyanshumakes/leetcode-solutions/actions/workflows/checks.yml)
+
+## All solutions at a glance
+
+| Problem | First approach | Optimized |
+| --- | --- | --- |
+| [3Sum](./arrays/3sum) | [brute_force.cpp](./arrays/3sum/brute_force.cpp) | [optimizedsol.py](./arrays/3sum/optimizedsol.py) |
+| [Best Time To Buy And Sell Stock](./arrays/best-time-to-buy-and-sell-stock) | [brute_force.cpp](./arrays/best-time-to-buy-and-sell-stock/brute_force.cpp) | [optimizedsol.cpp](./arrays/best-time-to-buy-and-sell-stock/optimizedsol.cpp) |
+| [Container With Most Water](./arrays/container-with-most-water) | [brute_force.cpp](./arrays/container-with-most-water/brute_force.cpp) | [optimizedsol.py](./arrays/container-with-most-water/optimizedsol.py) |
+| [Contains Duplicate](./arrays/contains-duplicate) | [brute_force.cpp](./arrays/contains-duplicate/brute_force.cpp) | [optimizedsol.py](./arrays/contains-duplicate/optimizedsol.py) |
+| [Longest Substring Without Repeating Characters](./arrays/longest-substring-without-repeating-characters) | [brute_force.cpp](./arrays/longest-substring-without-repeating-characters/brute_force.cpp) | [optimizedsol.py](./arrays/longest-substring-without-repeating-characters/optimizedsol.py) |
+| [Majority Element](./arrays/majority-element) | [brute_force.cpp](./arrays/majority-element/brute_force.cpp) | [optimizedsol.py](./arrays/majority-element/optimizedsol.py) |
+| [Maximum Average Subarray I](./arrays/maximum-average-subarray-i) | [brute_force.cpp](./arrays/maximum-average-subarray-i/brute_force.cpp) | [optimizedsol.py](./arrays/maximum-average-subarray-i/optimizedsol.py) |
+| [Maximum Subarray](./arrays/maximum-subarray) | [brute_force.cpp](./arrays/maximum-subarray/brute_force.cpp) | [optimizedsol.cpp](./arrays/maximum-subarray/optimizedsol.cpp) |
+| [Minimum Size Subarray Sum](./arrays/minimum-size-subarray-sum) | [brute_force.cpp](./arrays/minimum-size-subarray-sum/brute_force.cpp) | [optimizedsol.py](./arrays/minimum-size-subarray-sum/optimizedsol.py) |
+| [Product Of Array Except Self](./arrays/product-of-array-except-self) | [brute_force.cpp](./arrays/product-of-array-except-self/brute_force.cpp) | [optimizedsol.py](./arrays/product-of-array-except-self/optimizedsol.py) |
+| [Two Sum](./arrays/two-sum) | [brute_force.cpp](./arrays/two-sum/brute_force.cpp) | [optimizedsol.py](./arrays/two-sum/optimizedsol.py) |
+
 ## My Solutions
 
 ### 1. Two Sum — LeetCode #1
@@ -60,7 +78,7 @@ For this problem, I tried using sorting first and then improved the approach usi
 
 **Brute Force (C++)**
 
-File: [`sorting.cpp`](./arrays/contains-duplicate/sorting.cpp)
+File: [`brute_force.cpp`](./arrays/contains-duplicate/brute_force.cpp)
 
 I sorted the array and used a loop to check neighboring elements. If two adjacent elements were equal, it meant the array contained a duplicate.
 
