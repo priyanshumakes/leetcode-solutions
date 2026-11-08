@@ -1,0 +1,26 @@
+name: Solution checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax-check all C++ solutions
+        run: |
+          set -e
+          for f in $(find . -name '*.cpp'); do
+            echo "checking $f"
+            g++ -std=c++17 -fsyntax-only "$f"
+          done
+      - name: Byte-compile all Python solutions
+        run: |
+          set -e
+          for f in $(find . -name '*.py'); do
+            echo "checking $f"
+            python3 -m py_compile "$f"
+          done
